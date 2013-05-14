@@ -3,6 +3,7 @@ package com.nulltrain.housemod;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 
+import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 
 public class PorkSandwich extends ItemFood {
@@ -15,6 +16,10 @@ public class PorkSandwich extends ItemFood {
 		setUnlocalizedName(name);
 	}
 
+    public void registerIcons(IconRegister par1IconRegister) {
+        this.itemIcon = par1IconRegister.registerIcon("housemod:porksandwich");
+    }
+	
 	public String getTextureFile() {
 		return CommonProxy.ITEMS_PNG;
 	}

@@ -1,8 +1,8 @@
 package com.nulltrain.housemod;
 
 public class CommonProxy {
-        public static String ITEMS_PNG = "/tutorial/generic/items.png";
-        public static String BLOCK_PNG = "/tutorial/generic/block.png";
+        public static String ITEMS_PNG = "/com/nulltrain/housemod/textures/items.png";
+        public static String BLOCK_PNG = "/com/nulltrain/housemod/block.png";
         
         // Client stuff
         public void registerRenderers() {

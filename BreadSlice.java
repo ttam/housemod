@@ -2,6 +2,7 @@ package com.nulltrain.housemod;
 
 import net.minecraft.item.Item;
 
+import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 
 public class BreadSlice extends Item {
@@ -13,6 +14,10 @@ public class BreadSlice extends Item {
 		setCreativeTab(CreativeTabs.tabMisc);
 		setUnlocalizedName(name);
 	}
+
+    public void registerIcons(IconRegister par1IconRegister) {
+        this.itemIcon = par1IconRegister.registerIcon("housemod:breadslice");
+    }
 
 	public String getTextureFile() {
 		return CommonProxy.ITEMS_PNG;
