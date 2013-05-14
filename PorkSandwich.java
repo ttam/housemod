@@ -9,7 +9,7 @@ import net.minecraft.creativetab.CreativeTabs;
 public class PorkSandwich extends ItemFood {
 
 	public PorkSandwich(int id, int maxStackSize, int texture, String name) {
-		super(id, 5, 0.6F, false);
+		super(id, 13, 0.9F, true);
 
 		setMaxStackSize(maxStackSize);
 		setCreativeTab(CreativeTabs.tabMisc);

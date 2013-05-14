@@ -52,7 +52,7 @@ public class Housemod {
                 // Recipes
                 
                 // Cheating to start off
-                GameRegistry.addShapelessRecipe(new ItemStack(Item.bread), new ItemStack(Block.dirt));
+                GameRegistry.addShapelessRecipe(breadStack, new ItemStack(Block.dirt));
                 GameRegistry.addRecipe(new ItemStack(Item.porkCooked), "x", "x", 'x', new ItemStack(Block.dirt));
 
                 // Pork between two slices of bread

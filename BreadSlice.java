@@ -1,14 +1,15 @@
 package com.nulltrain.housemod;
 
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemFood;
 
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 
-public class BreadSlice extends Item {
+public class BreadSlice extends ItemFood {
 
 	public BreadSlice(int id, int maxStackSize, int texture, String name) {
-		super(id);
+		super(id, 1, 0.6F, false);
 
 		setMaxStackSize(maxStackSize);
 		setCreativeTab(CreativeTabs.tabMisc);
